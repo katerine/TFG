@@ -1,0 +1,101 @@
+
+body {
+	background: url('../img/fondo.jpg') no-repeat center center fixed;
+	background-size: cover;
+	height: 100%;
+	padding-top: 50px; /* Necesario para el padding de la clase .navbar-fixed-top. Cambiar si la altura de la web cambia */
+}
+
+#cuadro_login {
+	padding: 0% 2%;
+	margin-top: 5%;
+	background: rgba(237, 237, 237, 0.5);
+}
+
+#boton_acceso {
+	width:100%;
+	margin-bottom: 5%;
+}
+
+#imagen_login {
+	width:100%;
+	margin-bottom: 2%;
+	margin-bottom: 10%;
+}
+
+.panel_lateral_login {
+	background: linear-gradient(to right, #A4A4A4 0%, #A4A4A4 100%);
+	position: fixed;
+	top: 102px;
+	padding: 2%;
+	right: 0px;
+	width: 40%;
+	height: 100%;
+}
+
+.panel_dibujar{
+	background: linear-gradient(to right, #D8D8D8 0%, #D8D8D8 100%);
+	position: right;
+	top: 102px;
+	padding: 2%;
+	right: 0px;
+	width: 40%;
+	height: 100%;
+}
+
+.tabla{
+    color:#333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+}
+
+.borde_input {
+	border: red 2px solid;
+}
+
+.gridStyles{
+	width: 940px;
+	height: 300px;
+}
+
+.filtro{
+    border: 1px solid #d0d0d0;
+    border-color: #666666;
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    padding-top: 5px; 
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #dedede;
+}
+
+.filtroTabla{
+    width:200px;
+}
+
+.buscarTabla{
+     font-weight: bolder;
+}
+.tablaCat {
+    color:#333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+}
+.tablaCat th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #dedede;
+}
+.tablaCat td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #ffffff;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+ <html>
+  <head>
+   <link href="css/BootStrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Plantillas de CSS personalizadas -->
+    <link href="css/login.css" rel="stylesheet">
+
+    <!-- Javacript -->
+    <script src="js/JQuery/jquery-1.10.2.min.js"></script>
+    <script src="js/BootStrap/bootstrap.min.js"></script>
+  </head>
+
+<body>
+ <!-- Menu de navegación -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color: #373737;">
+      <div class="container">
+      
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">Proyecto</a>
+        </div>
+        
+        <!-- Accesos directos de la barra de navegación -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="./about.html">Acerca de nosotros</a>
+            </li>
+            <li>
+              <a>Servicios</a>
+            </li>
+            <li>
+              <a href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- La view listar artículos -->
+<center> 
+<section ng-controller="ArticlesController" ng-init="find()" class="container" >
+	<center><h1>Categoria</h1></center>
+	<ul>
+		<!-- La lista de artículos -->
+   <div class="panel_dibujar">
+		<li name="item" ng-repeat="article in articles | limitTo:5">
+			<a ng-href="#!/articles/{{article._id}}" ng-bind="article.titulo"></a>
+      
+			<br>
+			<small ng-bind="article.creado | date:'medium'"></small>
+			<small ng-bind="article.profesion">/</small>
+			<small ng-bind="article.creador.fullName"></small>
+			<p ng-bind="article.contenido"></p>
+			<!-- Mostrar los botones de edición para artículo creado -->
+    <p ng-show="authentication.user._id == article.creador._id">
+        <a href="/#!/articles/{{article._id}}/edit">editar</a>
+        <a href="/#!/articles/{{article._id}}" ng-click="delete();">borrar</a>
+    </p>
+		</li>
+	</ul>
+  </div></ul>
+ </section></center>
+</body>
+</html>

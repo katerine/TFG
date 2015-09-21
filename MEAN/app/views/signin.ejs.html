@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Usa la propiedad 'title' para renderizar un título de página  -->
+  <title><%= title %></title>
+</head>
+<body vlink="#060505">
+    <!-- Mostrar mensajes Flash  -->
+  <% for(var i in messages) { %>
+     <div class="flash"><%= messages[i] %></div>
+  <% } %>
+
+<!-- Contenido principal -->
+    <div class="container">
+      <!-- Panel lateral para el acceso -->
+      <div id="panel_acceso" class="panel_lateral_login" style="display:none;">
+        <div class="col-md-12" style="margin-top: 25%">
+          <form  method="post">
+            <div class="form-group">
+              <input type="text" name="username" class="form-control" id="nickname" placeholder="Escribe tu email o nombre de usuario">
+            </div>
+            <div class="form-group">
+              <input type="password" name="password" class="form-control" id="password" placeholder="Escribe tu contraseña">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Recordar mi sesión
+              </label>
+            </div>
+            <button id="boton_acceso" type="submit" class="btn btn-default" onclick="validarLogin()">Entrar</button>
+          </form>
+           <a href="/oauth/google">Identificarse usando Google</a>
+        </div>
+      </div>  
+</body>
+</html>

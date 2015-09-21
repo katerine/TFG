@@ -1,0 +1,37 @@
+body {
+	background: url('../img/fondos.jpg') no-repeat center center fixed;
+	background-size: cover;
+	height: 100%;
+	padding-top: 50px; /* Necesario para el padding de la clase .navbar-fixed-top. Cambiar si la altura de la web cambia */
+}
+
+#cuadro_login {
+	padding: 0% 2%;
+	margin-top: 5%;
+	background: rgba(237, 237, 237, 0.5);
+}
+
+#boton_acceso {
+	width:100%;
+	margin-bottom: 5%;
+}
+
+#imagen_login {
+	width:100%;
+	margin-bottom: 2%;
+	margin-bottom: 10%;
+}
+
+.panel_lateral_login {
+	background: linear-gradient(to right, #699272 0%,#44614b 100%);
+	position: fixed;
+	top: 102px;
+	padding: 2%;
+	right: 0px;
+	width: 40%;
+	height: 100%;
+}
+
+.borde_input {
+	border: red 2px solid;
+}

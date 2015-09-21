@@ -1,0 +1,23 @@
+.separacion_arriba {
+	margin-top:5px;	
+}
+
+.boton_ancho {
+	margin-top:10px;
+	width:100%;	
+}
+
+#grafico_donut {
+	width:100% !important;
+	height:75% !important;
+}
+
+#grafico_linea {
+	width:100% !important;
+	height:75% !important;	
+}
+
+#grafico_radar {
+	width:100% !important;
+	height:75% !important;
+}
